@@ -6,13 +6,16 @@ export const fetchWeatherData = async (location: string) => {
     const response = await fetch(
       `${BASE_URL}/forecast.json?key=${API_KEY}&q=${location}&days=5&aqi=yes&alerts=yes`
     );
+
     if (!response.ok) {
-      throw new Error("Failed to fetch weather data");
+      console.log("API failed:", response.status);
+      return { forecast: null };
     }
+
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error(error);
-    return null;
+    console.log("Network error:", error);
+    return { forecast: null };
   }
 };
