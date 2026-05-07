@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.navibar {
+  background-color: #b29e84;
+}
+
+header .logo{
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #fff;
+  font-size: 35px;
+}
+header .logoimg{
+  width: 10%;
+}
+.nav li a{
+  font-family: 'Playfair Display', sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.weather-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.weather-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-input {
+  padding: 10px 30px;
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+  background-color: #7c898b;
+}
+
+.search-input::placeholder{
+  color: #fff;
+}
+
+.search-button {
+  padding: 10px;
+  width: 15%;
+  background-color: #423e3a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #2980b9;
+}
+
+.weather-card {
+  background-color: #7c898b;  
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  text-align: center;
+}
+
+.loc-time-row{
+  padding: 5px 30px;
+  margin-bottom: 40px;
+}
+
+.loc-time-row h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.location-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50; 
+}
+
+.date {
+  font-size: 18px;
+  color: #95a5a6; 
+}
+.pawgo-weather-heading{
+  padding-right: 0;
+  width: 100px;
+}
+
+.weatherpaw-row{
+  justify-content: center;
+}
+
+.pawgo-weather-heading h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: right;
+  
+}
+
+.pawgo-heading h2{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 75px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0;
+}
+.weather-paw{
+  width: 100px;
+}
+.weather-paw img{
+  width: 50px;
+}
+
+.current-weather {
+  margin-top: 20px;
+}
+
+.weathericon-col{
+  width: 250px;
+  height: 200px;
+  position: relative;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  margin-top: -60px;
+  margin-left: -90px;
+}
+
+.weather-icon {
+  width: 300px;
+}
+.tem-name-col{
+  margin-left: -100px;
+}
+
+.tem-name-col h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.temperature {
+  font-family:  "Hammersmith One", sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  padding-left: 45px;
+  color: #fff;
+}
+
+.details {
+  font-family:  'Playfair Display', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.forecast-container {
+  background-color: #423e3a;
+  margin-top: -70px;
+  justify-content: center;
+  display: flex;
+}
+
+.forecast-container .weather-card{
+  background-color: green;
+  width: 75%;
+  color: #fff;
+  justify-content: center;
+}
+
+.forecast {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1.5px #ceb99e;
+  border-radius: 25px;
+  padding: 20px 50px;
+}
+
+.forecast-day {
+  text-align: center;
+  font-size: 14px;
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer {
+  background-color: #2c3e50;  /* Dark gray footer */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  margin-top: 15px;
+}
+
+.loading {
+  font-size: 20px;
+  text-align: center;
+  color: #3498db;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .weather-page{
+    min-height: unset;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 932px){
+  .nav{
+    flex-wrap: unset;
+  }
+  .search-button{
+    font-size: 12px;
+  }
+  .loc-time-row {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .current-weather .row{
+    display: block;
+    justify-items: center;
+  }
+  .weathericon-col{
+    width: unset;
+    height: unset;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .tem-name-col{
+    margin-left: 0;
+  }
+  .temperature{
+    margin: 0;
+  }
+  .weather-icon {
+    width: 150px;
+  }
+  .current-weather {
+    margin-top: 0;
+  }
+  .forecast {
+    width: 100%;
+  }
+}
